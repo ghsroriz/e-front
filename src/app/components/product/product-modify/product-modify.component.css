@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+}
+
+.card + .card{
+    margin-top: 5px;
+}
+
+.icons-container{
+    margin-left: 20px;
+}
+
+.icons{
+    cursor: pointer;
+}
+
+.icons + .icons {
+ margin-left: 20px;
+}

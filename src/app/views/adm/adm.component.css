@@ -1,0 +1,6 @@
+button{
+    background: orange;
+}
+button + button{
+margin-left: 10px;
+}

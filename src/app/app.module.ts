@@ -4,14 +4,32 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/template/header/header.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { FooterComponent } from './components/template/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http'
 
-import  { MatSidenavModule }  from '@angular/material/sidenav';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+
+
+import { HeaderComponent } from './components/template/header/header.component';
+import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { AdmComponent } from './views/adm/adm.component';
+import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { ProductModifyComponent } from './components/product/product-modify/product-modify.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -19,7 +37,11 @@ import { HomeComponent } from './views/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    AdmComponent,
+    ProductCreateComponent,
+    ProductModifyComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +49,14 @@ import { HomeComponent } from './views/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
