@@ -1,10 +1,10 @@
 <mat-card *ngFor="let p of products.prod" class="card mat-elevation-z8">
     <p class="text">{{p.cod_prod}} | {{p.desc}}</p>
     <div class="icons-container">
-        <i class="material-icons icons" >
+        <i class="material-icons icons" (click)="modify(p.cod_prod)">
             border_color
         </i>
-        <i class="material-icons icons">
+        <i class="material-icons icons" (click)="delete(p.cod_prod)">
            clear
         </i>
     </div>

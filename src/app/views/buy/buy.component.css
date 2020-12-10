@@ -1,0 +1,34 @@
+.final{
+    display: flex;
+    align-items: center;
+}
+.final-container{
+    display: flex;
+}
+.card{
+    margin-left: 15px;
+}
+button{
+   margin-left: 50px;
+   width: 150px;
+   height: 50px;
+   
+   border-radius: 10px;
+}
+
+.price-container{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 200px;
+    margin-right: 1px;
+    border: 1px solid black;
+
+    height: 50px;
+
+    font-size: 2rem;
+}
+
+.price-container p{
+    margin-top: 13px;
+}

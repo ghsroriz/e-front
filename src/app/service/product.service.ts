@@ -20,7 +20,7 @@ export class ProductService {
     });
   }
 
-  createProduct(product: Product): Observable<JSON>{
+  createProduct(product: Product): Observable<JSON> {
     try {
       return this.http.post<JSON>(`${Urls.urlInsert}`, product);
     } catch (e) {
@@ -29,9 +29,27 @@ export class ProductService {
     }
   }
 
-  loadProduct(): Observable<JSON>{
+  loadProduct(): Observable<JSON> {
     try {
       return this.http.get<JSON>(`${Urls.urlSelect}`);
+    } catch (e) {
+      console.error(e);
+      throw e;
+    }
+  }
+
+  deleteProduct(cod_prod: number): Observable<JSON>{
+    try {
+      return this.http.get<JSON>(`${Urls.urlDelete}/${cod_prod}`)
+    } catch (e) {
+      console.error(e);
+      throw e;
+    }
+  }
+
+  modifyProduct(product: Product): Observable<JSON>{
+    try {
+      return this.http.post<JSON>(`${Urls.urlUpdate}`,product)
     } catch (e) {
       console.error(e);
       throw e;

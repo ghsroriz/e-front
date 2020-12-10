@@ -1,0 +1,8 @@
+.form-change{
+    display: flex;
+    flex-direction: column;
+}
+
+button + button{
+    margin-left: 10px;
+}

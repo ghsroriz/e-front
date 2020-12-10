@@ -1,0 +1,29 @@
+<section class="final">
+    <section class="final-container">
+        <img [src]='product.image'>
+        <mat-card class="mat-elevation-z8 card">
+            <mat-card-title>
+                Finalizando a compra
+            </mat-card-title>
+            <mat-card-subtitle>
+                Confirme o preço e finalize a compra:
+            </mat-card-subtitle>
+            <section class="info">
+                <section class="name">
+                    Nome:
+                    {{product.desc}}
+                </section>
+                <section class="name">
+                    Quantidade Disponível:
+                    {{product.quant}}
+                </section>
+            </section>
+
+            <section class="price-container">
+               <p>R$ {{product.unityPrice}},00</p> 
+            </section>
+        </mat-card>
+    </section>
+    <button mat-raised-button style="background: greenyellow;" (click)="buy()">Comprar</button>
+    <button mat-raised-button style="background: red;" (click)="cancel()">Cancelar</button>
+</section>

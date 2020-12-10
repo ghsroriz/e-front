@@ -1,7 +1,7 @@
 export interface Product{
     cod_prod?: number
-    image?: string
+    image: string
     desc: string
-    quant?: number
-    unityPrice?: number
+    quant: number
+    unityPrice: number
 }

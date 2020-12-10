@@ -26,6 +26,9 @@ import { HomeComponent } from './views/home/home.component';
 import { AdmComponent } from './views/adm/adm.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductModifyComponent } from './components/product/product-modify/product-modify.component';
+import { ProductHomeComponent } from './components/product/product-home/product-home.component';
+import { BuyComponent } from './views/buy/buy.component';
+import { ProductChangeFormComponent } from './components/product/product-change-form/product-change-form.component';
 
 
 
@@ -41,7 +44,9 @@ import { ProductModifyComponent } from './components/product/product-modify/prod
     AdmComponent,
     ProductCreateComponent,
     ProductModifyComponent,
-    
+    ProductHomeComponent,
+    BuyComponent,
+    ProductChangeFormComponent,    
   ],
   imports: [
     BrowserModule,
@@ -58,7 +63,7 @@ import { ProductModifyComponent } from './components/product/product-modify/prod
     MatFormFieldModule,
     MatInputModule,
   ],
-  providers: [],
+  providers: [ProductChangeFormComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

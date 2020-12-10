@@ -1,0 +1,18 @@
+<mat-card *ngFor="let p of products.prod" class="card mat-elevation-z8">
+    <section class="image-container">
+        <img [src]="p.image" alt="product">
+    </section>
+
+    <section class="product-name">
+        {{p.desc}}
+    </section>
+
+    <section class="produc-price">
+        <p>R${{p.unityPrice}}</p>
+    </section>
+
+    <button type="button" mat-raised-button (click)="goToBuy(p)" class="bt-comprar">
+        Comprar Produto
+    </button>
+   
+</mat-card>

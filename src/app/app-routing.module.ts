@@ -1,3 +1,5 @@
+import { ProductChangeFormComponent } from './components/product/product-change-form/product-change-form.component';
+import { BuyComponent } from './views/buy/buy.component';
 import { ProductModifyComponent } from './components/product/product-modify/product-modify.component';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +13,10 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'buy',
+    component: BuyComponent
+  },
+  {
     path: 'adm',
     component: AdmComponent,
   },
@@ -21,6 +27,10 @@ const routes: Routes = [
   {
     path: 'adm/modify',
     component: ProductModifyComponent
+  },
+  {
+    path: 'adm/modify/change',
+    component: ProductChangeFormComponent
   }
 ];
 
